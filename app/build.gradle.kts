@@ -14,7 +14,7 @@ android {
 
 
     defaultConfig {
-        buildConfigField("String", "TRULIOO_API_KEY", "eyJraWQiOiJiNzU4MmQwYi0zMGU1LTQzZGEtYjNhNC1mZWVhOGVmNmQyZjEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5MmZjMDI3Yy1jZjE1LTQ1NWEtOTFkZi1mODY4ZGU4ZDdiNGQiLCJhdWQiOiJjb20udHJ1bGlvby5jdXN0b21lciIsInJldGVudGlvbl9wb2xpY3kiOiI3Nzc2MDAwIiwidXNlIjoibGljZW5zZSIsImlzcyI6Imh0dHBzOi8vdmVyaWZpY2F0aW9uLnRydWxpb28uY29tIiwic291cmNlIjoiY3VzdG9tZXIiLCJleHAiOjE3OTkzMDg4MDAsImlhdCI6MTczNjI5Mjg3M30.RZQfDp6fnOD3iCfvuifWdr0xc1RenLnzMmjRWA1A5hTetyP38MiTUZzLIeqoW0-9tu0oKxX3JTe6JIHw3KtlKygQq5bdb0ibaWJDyheQMnZGGkaqIBkQTKXdBwliWW3bwe16wrvPZVbWEVemeXFPUUS6-XODvx8bmJqEMFys2X7KxUMGQy5xhR15wvmV2-j1NWiqL-ay35Imcr_eOrPvKZ5yiYYja751VU-uRRXUY009zY1VFDY-xvFdYxIl-0r-_XmUuxXZ10_S1geJZlufMc476vp-zuXQHHjEQ6fq29b00MpFPhqdhm4Avr3uYp_7uX5cKmIC7XSuGXXQa1_9iBjeYKDdXxoUOW7k9FP_CV_oMNFNApgJKQjKBjy6VuaBCt9f_MaxASMSAkkGTt2HNvrIOCsnedPxsBbwbt9_IYkaYPWJL9d2z5cuWPykpSWFhW2Uf6qradmQXJ-pXpSPlrmc3bQx2L5HoWwvgRMtE0-MMxjhYrCm2kJ2PvxVHj3N")
+        buildConfigField("String", "TRULIOO_API_KEY", "")
         applicationId = "com.example.trulioosdkwrapper"
         minSdk = 24
         targetSdk = 34
