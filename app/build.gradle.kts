@@ -7,14 +7,7 @@ android {
     namespace = "com.example.trulioosdkwrapper"
     compileSdk = 34
 
-    buildFeatures {
-        viewBinding = true
-        buildConfig = true  // Add this line
-    }
-
-
     defaultConfig {
-        buildConfigField("String", "TRULIOO_API_KEY", "")
         applicationId = "com.example.trulioosdkwrapper"
         minSdk = 24
         targetSdk = 34
@@ -22,6 +15,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // API key configuration - replace with your actual API key
+        buildConfigField("String", "TRULIOO_API_KEY", "\"YOUR_API_KEY_HERE\"")
     }
 
     buildTypes {
@@ -42,11 +38,12 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true  // Needed for BuildConfig class generation
     }
 }
 
 dependencies {
-    // Trulioo SDK
+    // Trulioo SDK - make sure to use the correct package name
     implementation("com.trulioo:docv:2.+")
 
     // OkHttp for API calls
@@ -59,6 +56,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.activity:activity-ktx:1.7.2")
     implementation("com.google.android.material:material:1.9.0")
+
+    // App Startup
     implementation("androidx.startup:startup-runtime:1.1.1")
 
     // Testing dependencies

@@ -49,7 +49,8 @@ class MainActivity : AppCompatActivity() {
             try {
                 TruliooApiClient().generateShortcode(
                     apiKey = BuildConfig.TRULIOO_API_KEY,
-                    object : TruliooApiClient.ShortcodeCallback {
+                    documentTypes = listOf("PASSPORT", "DRIVERS_LICENSE", "ID_CARD"),
+                    callback = object : TruliooApiClient.ShortcodeCallback {
                         override fun onSuccess(shortcode: String) {
                             this@MainActivity.shortCode = shortcode
                             startTruliooWorkflow()
